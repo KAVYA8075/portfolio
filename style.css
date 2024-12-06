@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Playfair Display", serif;
+
+} 
+
+
+
+#containe{
+    width: 100%;
+    padding: 0px;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+
+}
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.links:hover {
+    text-decoration: underline;
+    color: red;
+
+}
+.home-content{
+    margin:13% 8% 8% 8%;
+}
+#username{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+#lname{
+    color:rgb(255, 145, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#user-details{
+    line-height: 1.2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.home-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+} 
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.home-img:hover #shape{
+    bottom: 70px;
+
+}
+.home-img:hover #girl{
+    left: 40%; 
+}
+
+#about{
+    margin: 15% 8% 0px 8%;
+
+}
+.section-head{
+    text-align: center;
+}
+
+.main-head{
+    font-size: 30px;
+    /* font-family: "Sevillana", serif; */
+    font-family: "Lobster", sans-serif;
+    padding-bottom: 5%;
+    
+
+}
+.sub-head{
+    font-size:20px;
+    color:red;
+    font-family: "Sevillana", serif;
+}
+.about-body{
+    margin-top: 20px;
+    display: grid;
+    /* grid-template-columns:  repeat(2,1fr); */
+    grid-template-columns: auto auto auto auto ;
+    column-gap: 10px; 
+   
+    
+    align-items: center;
+}
+.about-img>img{
+    width: 350px;
+    padding: 10px;
+    padding-right: 5   0px;
+    
+   
+}
+.about-content{
+    
+    font-size: 20px;
+    text-align: justify;
+   
+
+}
+   
+.Information{
+    /* margin-top: 1.3rem; */
+     margin-top: 20px;
+    
+    
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+    
+}
+
+.Skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.myskill{
+    width: 90%;
+    padding-left: 50px;
+    padding-top: 30px;
+
+    /* padding: 10px;
+    margin: 8% 8% 0px 8%; */
+
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+.base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.html-bar{
+    background-color: orange;
+    width: 85%;
+}
+.css-bar{
+    width:85%;
+    background-color: orange;
+}
+.js-bar{
+    width:75%;
+    background-color: orange;
+}
+.py-bar{
+    width:80%;
+    background-color: orange;
+}
+#contact{
+   margin: 0px 8% 8% ;
+   margin-top: 9%;
+}
+.icon-collections{
+    display: flex;justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid 1px ; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,yellow,
+    red,violet);
+    
+}
+.brands{
+    color: black;
+    font-size: 30px;
+
+}
+
+.icon:hover .brands{
+    color:white;
+    animation:rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+   20% {
+       transform: rotate(-30deg);
+  }
+   40%{
+    
+    transform: rotate(30deg);
+
+   }
+   60%{
+    transform: rotate(-30deg);
+   }
+   80%{
+    transform: rotate(30deg);
+   }
+   100%{
+    transform: rotate(-30deg);
+   }
+}
+
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(6, 7, 7);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+
+}
+
+
+    
+ 
+    
+
+
+
+
+
+
+
+
+ 
+
+
+
